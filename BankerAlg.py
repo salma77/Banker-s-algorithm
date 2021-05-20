@@ -80,14 +80,8 @@ while(on == 'y'):
     resources = int_input("Enter number of resources\n")
 
     available = matrix_input(1, resources, "Available vector")
-    print(available)
-    print("\n")
     alloc_mat = matrix_input(processes, resources, "Allocation matrix")
-    print(alloc_mat)
-    print("\n")
     max_mat = matrix_input(processes, resources, "Maximum matrix")
-    print(max_mat)
-    print("\n")
 
     #Calculating outputs
     need_mat = np.subtract(max_mat, alloc_mat)
